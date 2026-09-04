@@ -1,0 +1,4 @@
+# Cloudflare Pages SPA Routing Rule
+# Static files in dist/ take priority automatically.
+# Any dynamic/unmatched route falls back to /index.html with status 200
+/*    /index.html   200

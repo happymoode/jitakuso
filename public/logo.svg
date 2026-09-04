@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <!-- Sky background gradient -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7dd3fc"/>
+      <stop offset="60%" stop-color="#bae6fd"/>
+      <stop offset="100%" stop-color="#e0f2fe"/>
+    </linearGradient>
+
+    <!-- Mount Fuji gradient -->
+    <linearGradient id="fujiGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+
+    <!-- Red Sun gradient -->
+    <radialGradient id="sunGrad" cx="45%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </radialGradient>
+
+    <!-- House Roof gradient -->
+    <linearGradient id="roofGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Text 3D Shadow -->
+    <filter id="kanjiShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.6"/>
+    </filter>
+
+    <clipPath id="circleClip">
+      <circle cx="100" cy="100" r="92" />
+    </clipPath>
+  </defs>
+
+  <!-- Outer Red Border Ring -->
+  <circle cx="100" cy="100" r="96" fill="#dc2626" stroke="#b91c1c" stroke-width="2" />
+
+  <!-- Inner Clipped Content -->
+  <g clip-path="url(#circleClip)">
+    <!-- Sky Background -->
+    <circle cx="100" cy="100" r="92" fill="url(#skyGrad)" />
+
+    <!-- Red Rising Sun (日の丸) -->
+    <circle cx="100" cy="70" r="42" fill="url(#sunGrad)" />
+
+    <!-- Mount Fuji (富士山) -->
+    <!-- Fuji Base -->
+    <polygon points="120,130 155,75 168,75 205,130" fill="url(#fujiGrad)" />
+    <!-- Fuji Snow Cap -->
+    <polygon points="155,75 168,75 178,92 172,90 166,95 161,90 155,93 147,91 144,92" fill="#ffffff" />
+
+    <!-- Distant hills / ground -->
+    <ellipse cx="100" cy="150" rx="95" ry="35" fill="#38bdf8" opacity="0.4" />
+
+    <!-- Cherry Blossom Tree Branches (桜の木) -->
+    <path d="M20,110 Q45,95 65,70 Q55,60 50,45" stroke="#78350f" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <path d="M42,85 Q30,70 25,65" stroke="#78350f" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+    <!-- Sakura Flowers (Pink Petals) -->
+    <!-- Flower 1 -->
+    <g transform="translate(62, 55)">
+      <circle cx="0" cy="-7" r="5.5" fill="#f472b6"/>
+      <circle cx="6.5" cy="-2" r="5.5" fill="#f472b6"/>
+      <circle cx="4" cy="6" r="5.5" fill="#f472b6"/>
+      <circle cx="-4" cy="6" r="5.5" fill="#f472b6"/>
+      <circle cx="-6.5" cy="-2" r="5.5" fill="#f472b6"/>
+      <circle cx="0" cy="0" r="3" fill="#fbcfe8"/>
+      <circle cx="0" cy="0" r="1.5" fill="#db2777"/>
+    </g>
+
+    <!-- Flower 2 -->
+    <g transform="translate(35, 72)">
+      <circle cx="0" cy="-6" r="5" fill="#fb7185"/>
+      <circle cx="5.5" cy="-2" r="5" fill="#fb7185"/>
+      <circle cx="3.5" cy="5" r="5" fill="#fb7185"/>
+      <circle cx="-3.5" cy="5" r="5" fill="#fb7185"/>
+      <circle cx="-5.5" cy="-2" r="5" fill="#fb7185"/>
+      <circle cx="0" cy="0" r="2.5" fill="#ffe4e6"/>
+      <circle cx="0" cy="0" r="1" fill="#e11d48"/>
+    </g>
+
+    <!-- Flower 3 -->
+    <g transform="translate(25, 95)">
+      <circle cx="0" cy="-5" r="4.5" fill="#f472b6"/>
+      <circle cx="5" cy="-1.5" r="4.5" fill="#f472b6"/>
+      <circle cx="3" cy="4.5" r="4.5" fill="#f472b6"/>
+      <circle cx="-3" cy="4.5" r="4.5" fill="#f472b6"/>
+      <circle cx="-5" cy="-1.5" r="4.5" fill="#f472b6"/>
+      <circle cx="0" cy="0" r="2" fill="#fbcfe8"/>
+    </g>
+
+    <!-- Floating Sakura Petals -->
+    <path d="M78,85 C75,80 82,75 85,80 C88,85 81,90 78,85 Z" fill="#f472b6" opacity="0.9" />
+    <path d="M175,98 C172,94 178,90 181,94 C184,98 178,102 175,98 Z" fill="#f472b6" opacity="0.8" />
+    <path d="M105,160 C102,156 108,152 111,156 C114,160 108,164 105,160 Z" fill="#f472b6" opacity="0.85" />
+
+    <!-- Center House (お家) -->
+    <!-- Chimney -->
+    <rect x="118" y="58" width="10" height="20" fill="#1e293b" rx="2" />
+    <!-- House Body -->
+    <rect x="74" y="88" width="52" height="42" fill="#ffffff" stroke="#0f172a" stroke-width="3.5" rx="3" />
+    
+    <!-- Window (4 Panes) -->
+    <rect x="91" y="96" width="18" height="18" fill="#38bdf8" stroke="#0f172a" stroke-width="2.5" rx="1.5" />
+    <line x1="100" y1="96" x2="100" y2="114" stroke="#0f172a" stroke-width="2" />
+    <line x1="91" y1="105" x2="109" y2="105" stroke="#0f172a" stroke-width="2" />
+
+    <!-- Roof -->
+    <polygon points="100,52 136,88 64,88" fill="url(#roofGrad)" stroke="#0f172a" stroke-width="4" stroke-linejoin="round" />
+    <!-- Roof highlight trim -->
+    <polyline points="66,86 100,54 134,86" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Foreground Kanji: 自宅 (with dark 3D contour and bright white fill) -->
+  <g filter="url(#kanjiShadow)">
+    <!-- Thick Outer Stroke -->
+    <text x="100" y="152" 
+          font-family="'Hiragino Sans', 'Noto Sans JP', 'Yu Gothic', 'Arial Black', sans-serif" 
+          font-size="60" 
+          font-weight="900" 
+          letter-spacing="2"
+          text-anchor="middle" 
+          dominant-baseline="central" 
+          fill="#0f172a" 
+          stroke="#0f172a" 
+          stroke-width="14" 
+          stroke-linejoin="round" 
+          stroke-linecap="round">自宅</text>
+    
+    <!-- Secondary Blue Outline for contrast pop -->
+    <text x="100" y="152" 
+          font-family="'Hiragino Sans', 'Noto Sans JP', 'Yu Gothic', 'Arial Black', sans-serif" 
+          font-size="60" 
+          font-weight="900" 
+          letter-spacing="2"
+          text-anchor="middle" 
+          dominant-baseline="central" 
+          fill="#1e3a8a" 
+          stroke="#1e3a8a" 
+          stroke-width="8" 
+          stroke-linejoin="round">自宅</text>
+
+    <!-- Bright Crisp White Core Kanji Fill -->
+    <text x="100" y="152" 
+          font-family="'Hiragino Sans', 'Noto Sans JP', 'Yu Gothic', 'Arial Black', sans-serif" 
+          font-size="60" 
+          font-weight="900" 
+          letter-spacing="2"
+          text-anchor="middle" 
+          dominant-baseline="central" 
+          fill="#ffffff">自宅</text>
+  </g>
+</svg>

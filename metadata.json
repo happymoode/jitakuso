@@ -1,0 +1,6 @@
+{
+  "name": "自宅 - 仕事 運動",
+  "description": "自宅での仕事・運動・暮らしをわかりやすく解説する総合情報サイト",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
